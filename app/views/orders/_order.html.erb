@@ -1,0 +1,21 @@
+<%unless order.blank?%>
+  <% td_class = cycle('', ' class="impar"') %>
+  <tr>
+    <td<%= td_class %>><%= h order.code %> </td>
+    <td<%= td_class %>><%= h order.client.commercial_name%> </td>
+    <td<%= td_class %>>
+       <%= link_to image_tag('view.png', :alt => t('general.show'), :title => t('general.show' )), order_url(order) %>
+       <%= print_icon(order) %>
+       <%= print_to_pdf_icon(order) %>
+       <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit') ), edit_order_url(order) %>
+       <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), order_url(order), :method => 'delete', :confirm => t('general.are_you_sure') %>
+       <%= link_to image_tag('scope.png', :alt => t('general.edit_items'), :title => t('general.edit_items')), order_order_lines_path(order) %>
+       <!--%= show_state_machine_transitions order %-->
+    </td>
+    <td><%= show_delivery_note_actions order %></td>
+    <% unless order.delivery_note_pendant? %>
+      <td><%= show_invoice_actions order %></td>
+    <% end %>
+      
+  </tr>
+<% end %>

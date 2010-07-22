@@ -1,0 +1,154 @@
+label{
+font-family:Helvetica;
+font-weight: 200;
+color:white;
+font-size:1.2em;
+letter-spacing:1px;
+}
+legend{
+font-weight: bold;
+font-size:2em;
+color:white;
+background-image:url(../images/bg-body.png);
+margin-top:1px;
+border: 1px solid #ccc;
+border-bottom:2px solid #ccc;
+border-right:2px solid #ccc;
+padding:5px;
+}
+fieldset{
+padding:1.4em;
+margin: 2em 0 0 0;
+border: 4px double #ccc;
+background-color:transparent;
+background-image:url(../images/fondo.png);
+}
+
+input[type=text], input[type=password],
+input.text, input.title
+ {
+background-color:transparent;
+background-image:url(../images/layout_bottom.png);
+height:20px;
+width:405px;
+border:1px solid #fff;
+padding:5px;
+color:#ffffff;
+font-size:1.1em; 
+}
+input[type=text]:focus, input[type=password]:focus, 
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus { 
+  border:2px solid #fff; 
+
+}
+select {
+background-color:transparent;
+background:#27313c none repeat scroll 0 0;
+height:33px;
+border:1px solid #fff;
+padding:5px;
+font-size:1em;
+color:#fff;
+width:100%;
+}
+
+.textarea-big {
+background-color:transparent;
+background-image:url(../images/fondop.png);
+border:1px solid #fff;
+padding:5px;
+color:#fff;
+font-family:inherit;
+font-size:1.1em;
+width: 405px; height: 427px; 
+}
+.textarea-small{
+background-color:transparent;
+background-image:url(../images/fondop.png);
+border:1px solid #fff;
+padding:5px;
+color:#fff;
+font-family:inherit;
+font-size:1.1em;
+width: 405px; height: 120px; 
+}
+
+.fieldWithErrors * {color: #68020e;}
+
+.fieldWithErrors input{border-color: #68020e;}
+
+
+
+button {
+padding:10px;
+padding-top:7px;
+padding-right:10px; 
+border:none;
+color:#fff;
+background-color:transparent;
+background-image:url(../images/fondoboton.png);
+background-repeat:no-repeat;
+}
+button:hover {
+padding:10px;
+padding-top:7px;
+padding-right:10px;
+border:none;
+color:#fff;
+background-color:transparent;
+background-image:url(../images/fondobotonfocus.png);
+background-repeat:no-repeat;
+
+}
+.miniform
+input[type="text"], input[type="password"], input.text, input.title {
+background-color:transparent;
+background-image:url(../images/layout_bottom.png);
+border:1px solid #FFFFFF;
+color:#FFFFFF;
+font-size:1.1em;
+height:20px;
+padding:5px;
+width:110px;
+
+}
+
+#order_line-information
+{
+text-align:center;
+}
+.miniform h3
+{
+color:#ffffff;
+font-size:1.2em;
+text-align:center;
+margin-top:10px;
+font-weight:500; 
+background-image:url(../images/pix.png);
+padding-top:7px;
+padding-bottom:7px;	
+}
+
+.miniform_producto{
+margin-left:25px;
+}
+.miniform_tipo{
+margin-left:15px;
+}
+.miniform_precio{
+margin-left:15px;
+}
+
+
+input.bigcheck 
+ {
+margin-top:12px;
+position:relative;
+top:0.25em;
+margin-left:30%;
+}
+
+.miniform input[type="file"]{
+margin-top:10px;
+}

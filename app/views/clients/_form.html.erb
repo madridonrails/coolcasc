@@ -1,0 +1,171 @@
+  <div id="client-information" class="column span-12">
+    <fieldset>
+      <legend><%= t 'client.form.legend.client_information' %></legend>
+      <p>
+        <%= label_attribute :client, :code %>
+        <br/>
+        <%= text_field :client, :code %>
+      </p>
+      <p>
+        <%= label_attribute :client, :corporate_name %>
+        <br/>
+        <%= text_field :client, :corporate_name %>
+      </p>
+      <p>
+        <%= label_attribute :client, :cif %>
+        <br/>
+        <%= text_field :client, :cif %>
+      </p>
+      <p>
+        <%= label_attribute :client, :commercial_name %>
+        <br/>
+        <%= text_field :client, :commercial_name %>
+      </p>
+      <p>
+        <%= label_attribute :client, :site %>
+        <br/>
+        <%= text_field :client, :site %>
+      </p>
+      <p>
+        <%= label_attribute :client, :official_address %>
+        <br/>
+        <%= text_area :client, :official_address, :class => 'textarea-small' %>
+      </p>
+      <p>
+        <%= label_attribute :client, :delivery_address %>
+        <br/>
+        <%= text_area :client, :delivery_address, :class => 'textarea-small' %>
+      </p>
+      <p>
+        <%= label_attribute :client, :delivery_contact %>
+        <br/>
+        <%= text_field :client, :delivery_contact %>
+      </p>
+      <p>
+        <%= label_attribute :client, :charge %>
+        <br/>
+        <%= text_field :client, :charge %>
+      </p>
+      <p>
+        <%= label_attribute :client, :sales_manager_id %>
+        <br/>
+        <%= select(:client, :sales_manager_id, list_from_record('SalesManager', :header => t('client.choose_sale_manager'))) %>
+      </p>
+      <p>
+        <%= label_attribute :client, :notes %>
+        <br/>
+        <%= text_area :client, :notes, :class => 'textarea-big' %>
+      </p>
+       <%= image_tag 'logo.gif', :class=>'logo', :accesskey=>'i', :title=>(t 'client.form.images.logo.title'), :alt=>(t 'client.form.images.images.logo.alt') %>
+      </a>
+    </fieldset>
+  </div>
+  <div id="contact-person" class="column span-12 last">
+    <fieldset>
+      <legend><%= t 'client.form.legend.contact_person' %></legend>
+      <p>
+        <%= label_attribute :client, :contact_person %>
+        <br/>
+        <%= text_field :client, :contact_person %>
+      </p>
+      <p>
+        <%= label_attribute :client, :contact_phone %>
+        <br/>
+        <%= text_field :client, :contact_phone %>
+      </p>
+      <p>
+        <%= label_attribute :client, :contact_mobile %>
+        <br/>
+        <%= text_field :client, :contact_mobile %>
+      </p>
+      <p>
+        <%= label_attribute :client, :contact_fax %>
+        <br/>
+        <%= text_field :client, :contact_fax %>
+      </p>
+      <p>
+        <%= label_attribute :client, :contact_mail %>
+        <br/>
+        <%= text_field :client, :contact_mail %>
+      </p>
+    </fieldset>
+  </div>
+  <div id="buying-person" class="column span-12 last">
+    <fieldset>
+      <legend><%= t 'client.form.legend.buying_person' %></legend>
+      <p>
+        <%= label_attribute :client, :buying_person %>
+        <br/>
+        <%= text_field :client, :buying_person %>
+      </p>
+      <p>
+        <%= label_attribute :client, :buying_phone %>
+        <br/>
+        <%= text_field :client, :buying_phone %>
+      </p>
+      <p>
+        <%= label_attribute :client, :buying_mobile %>
+        <br/>
+        <%= text_field :client, :buying_mobile %>
+      </p>
+      <p>
+        <%= label_attribute :client, :buying_fax %>
+        <br/>
+        <%= text_field :client, :buying_fax %>
+      </p>
+      <p>
+        <%= label_attribute :client, :buying_mail %>
+        <br/>
+        <%= text_field :client, :buying_mail %>
+      </p>
+    </fieldset>
+  </div>
+  <div id="paying-person" class="column span-12 last">
+    <fieldset>
+      <legend><%= t 'client.form.legend.paying_person' %></legend>
+      <p>
+        <%= label_attribute :client, :paying_person %>
+        <br/>
+        <%= text_field :client, :paying_person %>
+      </p>
+      <p>
+        <%= label_attribute :client, :paying_phone %>
+        <br/>
+        <%= text_field :client, :paying_phone %>
+      </p>
+      <p>
+        <%= label_attribute :client, :paying_mobile %>
+        <br/>
+        <%= text_field :client, :paying_mobile %>
+      </p>
+      <p>
+        <%= label_attribute :client, :paying_fax %>
+        <br/>
+        <%= text_field :client, :paying_fax %>
+      </p>
+      <p>
+        <%= label_attribute :client, :paying_mail %>
+        <br/>
+        <%= text_field :client, :paying_mail %>
+      </p>
+      <p>
+        <%= label_attribute :client, :payment_id %>
+        <br/>
+        <%= select(:client, :payment_id, list_from_record('Payment', :header => 'Elija una forma de pago')) %>
+      </p>
+      <p>
+        <%= label_attribute :client, :payment_account %>
+        <br/>
+        <%= text_field :client, :payment_account %>
+      </p>
+      <p>
+        <%= label_attribute :client, :payment_days %>
+        <br/>
+        <%= select(:client, :payment_days, {1=>1, 2=>2}) %>
+      </p>
+    </fieldset>
+  </div>
+  <div id="button-section" class="column span-24 last">
+    <%= submit_button %>
+    <%= go_back_button clients_path %>
+  </div>

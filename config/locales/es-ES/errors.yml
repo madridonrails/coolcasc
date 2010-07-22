@@ -1,0 +1,16 @@
+es-ES:
+  activerecord:
+    errors:
+      messages:
+        blank: no puede estar vacío
+        too_short: es demasiado corto
+      models:
+        order:
+          attributes:
+            code:
+              taken: ya existe en la aplicación. Elija uno diferente
+        order_line:
+          attributes:
+            count:
+              not_a_number: tiene que ser un número
+              greater_than: tiene que ser mayor que 0

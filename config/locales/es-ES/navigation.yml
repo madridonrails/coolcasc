@@ -1,0 +1,7 @@
+es-ES:
+  navigation:
+    items:
+      clients: Clientes
+      orders: Pedidos
+      products: Productos
+      sales_managers: Representantes

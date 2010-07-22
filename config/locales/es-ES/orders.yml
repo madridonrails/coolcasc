@@ -1,0 +1,37 @@
+es-ES:
+  order:
+    actions: Acciones sobre pedido
+    choose_client: Elija cliente
+    create_delivery_note: Crear albarán
+    create_invoice: Crear factura
+    edit_delivery_note: Editar albarán
+    edit_invoice: Editar factura
+    events:
+      cancel: Cancelar
+      cancel_issue_invoice: Cancelar 
+      create_delivery_note: Crear albarán
+      create_invoice: Crear factura
+      error:
+        cancel: El pedido no se ha podido cancelar
+        generate: El pedido no se ha podido generar
+        deal: El pedido no se ha podido procesar
+      deal: Procesar
+      generate: Generar
+      issue_invoice: Facturar
+      success:
+        cancel: El pedido se ha cancelado
+        create_delivery_note: Se ha creado el albarán
+        create_invoice: Se ha creado la factura
+        generate: El pedido se ha generado
+        deal: El pedido se ha procesado
+      view_invoice: Ver factura
+    form:
+      leave_code_blank_for_automatic: (dejar en blanco para asignación automática)
+      legend:
+        order_information: Información de pedido
+    index:
+      summary: Listado de pedidos
+    new_item: Nuevo pedido
+    no_orders: No hay pedidos
+    view_delivery_note: Ver albarán
+    view_invoice: Ver factura

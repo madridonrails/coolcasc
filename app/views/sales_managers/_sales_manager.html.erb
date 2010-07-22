@@ -1,0 +1,11 @@
+<%unless sales_manager.blank?%>
+  <% td_class = cycle('', ' class="impar"') %>
+  <tr>
+    <td<%= td_class %>><%= h sales_manager.name %> </td>
+    <td<%= td_class %>>
+       <%= link_to image_tag('view.png', :alt => t('general.show'), :title => t('general.show' )), sales_manager_url(sales_manager) %>
+       <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit') ), edit_sales_manager_url(sales_manager) %>
+       <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), sales_manager_url(sales_manager), :method => 'delete', :confirm => t('general.are_you_sure') %>
+    </td>
+  </tr>
+<% end %>

@@ -1,0 +1,11 @@
+<% product = order_line.product %>
+<tr>
+  <td><%= h order_line.count %></td>
+  <td><%= h product.code %></td>
+  <td><%= h product.cover_collection.name %></td>
+  <td><%= order_line.product.description %></td>
+  <td><%= order_line.marked? ? number_to_currency(order_line.mark_price) : '&nbsp;'%></td>
+  <td><%= number_to_currency (product.retail_price) %></td>
+  <td><%= number_to_currency (order_line.total_price) %></td>
+</tr>
+

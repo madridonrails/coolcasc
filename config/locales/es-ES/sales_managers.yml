@@ -1,0 +1,8 @@
+es-ES:
+  sales_manager:
+    form:
+      legend:
+        sales_manager_information: Información del representante
+    index:
+      summary: Listado de representantes
+    new_item: Nuevo representante

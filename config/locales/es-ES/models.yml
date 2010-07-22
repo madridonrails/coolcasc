@@ -1,0 +1,93 @@
+es-ES:
+  activerecord:
+    attributes:
+      client:
+        buying_fax: fax
+        buying_mail: e-mail
+        buying_mobile: Móvil
+        buying_person: Nombre
+        buying_phone: Teléfono
+        charge: Recargo de equivalencia
+        cif: CIF
+        code: Código de cliente
+        commercial_name: Nombre comercial
+        contact_fax: fax
+        contact_mail: e-mail
+        contact_mobile: Móvil
+        contact_person: Nombre
+        contact_phone: Teléfono
+        corporate_name: Razón social
+        delivery_address: Dirección de envío
+        delivery_contact: Destinatario del envío
+        notes: Observaciones
+        official_address: Dirección fiscal
+        paying_fax: fax
+        paying_mail: e-mail
+        paying_mobile: Móvil
+        paying_person: Nombre
+        paying_phone: Teléfono
+        payment_account: Cuenta de pago
+        payment_days: Pago a X días de fecha de factura
+        payment_id: Forma de pago
+        sales_manager_id: Representante
+        site: Sitio Web
+      delivery_note:
+        code: Código de albarán
+        delivery_date: Fecha de entrega
+      invoice:
+        amount_charged: Importe cobrado
+        charge_date: Fecha de cobro
+        code: Código de factura
+        delivery_date: Fecha de factura
+        freight: Importe de portes
+        order_id: Pedido
+      order:
+        amount_paid: Importe pagado
+        client_id: Cliente
+        code: Código
+        company_discount: Descuento Coolcasc
+        delivery_date: Fecha estimada de entrega
+        deposit: Con depósito
+        freight_in_invoice: Portes en factura
+        is_paid: Pagado
+        notes: Observaciones
+        order_date: Fecha de pedido
+        paid_date: Fecha de pago
+        sales_manager_discount: Descuento de representante
+        catalogs: Catálogos
+        exhibitors: Expositores
+        state: Estado
+        urgent: Urgente
+      order_line:
+        count: Cantidad
+        cover_pattern_id: Patrón de funda
+        group: Grupo
+        image_file_name: Imagen
+        marked: Marcado
+        mark_id: Tipo de marcado
+        mark_price: Precio de marcado
+        product_id: Producto
+      product:
+        code: Código de producto
+        cost_price: Precio de coste
+        cover_collection_id: Colección de funda
+        description: Descripción
+        name: Nombre
+        retail_price: Precio unitario
+        weight: Peso
+        wholesale_price: Precio distribución
+      sales_manager:
+        address: Dirección personal
+        charge: Recargo de equivalencia
+        cif: CIF
+        commission: Comisión
+        corporate_name: Razón social
+        email: e-mail
+        fax: Fax
+        market: Mercado
+        mobile: Teléfono móvil
+        name: Nombre
+        official_address: Dirección fiscal
+        phone: Teléfono
+        
+

@@ -1,0 +1,22 @@
+<div id="elements-list" class="span-24">
+  <div id="sales_manager-information" class="span-24">
+    <fieldset>
+      <legend><%= t 'sales_manager.form.legend.sales_manager_information' %></legend>
+      <span><em><%= label_attribute :sales_manager, :name %>:</em><%= h @sales_manager.name %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :phone %>:</em><%= h @sales_manager.phone %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :address %>:</em><%= h @sales_manager.address %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :mobile %>:</em><%= h @sales_manager.mobile %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :fax %>:</em><%= h @sales_manager.fax %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :email %>:</em><%= h @sales_manager.email %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :commission %>:</em><%= h @sales_manager.commission %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :corporate_name %>:</em><%= h @sales_manager.corporate_name %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :cif %>:</em><%= h @sales_manager.cif %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :official_address %>:</em><%= h @sales_manager.official_address %></span><br/>
+      <span><em><%= label_attribute :sales_manager, :charge %>:</em><%= h @sales_manager.charge %></span><br/>
+    </fieldset>
+  </div>
+  <div id="button-section" class="span-24">
+    <%= submit_button %>
+    <%= go_back_button sales_managers_path %>
+  </div>
+</div>

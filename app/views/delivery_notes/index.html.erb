@@ -1,0 +1,13 @@
+<%= object_messages %>
+<div id="elements-list" class="span-24">
+  <% unless @delivery_notes.empty? %>
+    <table id="table-elements-list" summary="<%=t('delivery_note.index.sumary')%>">
+      <%= render :partial => 'header' %>
+      <%= render :partial => 'delivery_note', :collection => @delivery_notes %>
+    </table>
+  <% end %>
+  <div id="new-item" class="new-item-button"><%= blueprint_button(new_delivery_note_path, :title => t('delivery_note.new_item'), :image => 'newitem.png', :image_alt => t('delivery_note.new_item'), :image_title => t('delivery_note.new_item')) %></div>
+</div>
+<div id="pagination" class="span-24">
+  <%= paginate(@delivery_notes) %>
+</div>

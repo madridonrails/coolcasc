@@ -1,0 +1,18 @@
+es-ES:
+  title:
+    default: Coolcasc
+    clients:
+      new: Nuevo cliente
+      index: Clientes
+    products:
+      new: Nuevo producto
+      index: Productos
+    sales_managers:
+      new: Nuevo representante
+      index: Representantes
+    orders:
+      new: Nuevo pedido
+      index: Pedidos
+    order_lines:
+      new: Nueva línea de pedido
+      index: Líneas de pedidos

@@ -1,0 +1,12 @@
+es-ES:
+  delivery_note:
+    actions: Acciones sobre albarán
+    create:
+      success: El albarán se ha generado correctamente
+    form:
+      legend:
+        delivery_note_information: Información de albarán
+    new_item: Nuevo albarán
+    no_delivery_notes: No hay albaranes creados
+    update:
+      success: El albarán se ha modificado correctamente

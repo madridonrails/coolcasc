@@ -1,0 +1,2 @@
+module DeliveryNotesHelper
+end

@@ -1,0 +1,13 @@
+<% unless delivery_note.blank? %>
+  <% td_class = cycle('', ' class="impar") %>
+  <tr>
+    <td<%= td_class %>><%= h delivery_note.code %></td>
+    <td<%= td_class %>><%= h delivery_note.delivery_note %></td>
+    <td<%= td_class %>><%= h delivery_note.state %></td>
+    <td<%= td_class %>>
+      <%= link_to image_tag('view.png', :alt => t('general.show'), :title => t('general.show')), delivery_note_path(delivery_note) %>
+      <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit')), edit_delivery_note_path(delivery_note) %>
+      <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete')), delivery_note_path(delivery_note)i, :method => 'delete', :confirm => t('general.are_you_sure') %>
+      <%= show_state_machine_transitions delivery_note %>
+    </td>
+<%end>

@@ -1,0 +1,15 @@
+<%= object_messages %>
+<div id="elements-list" class="span-24">
+  <%unless @orders.empty? %>
+    <table id="table-elements-list" summary="<%= t ('order.index.summary') %>">
+      <%= render :partial => 'header' %>
+      <%= render :partial => 'order', :collection => @orders %>
+    </table>
+  <% else %>
+    <%= t ('order.no_orders') %>
+  <% end %>
+  <div class="span-24 button-section"><%= blueprint_button(new_order_url, :class => 'new-item-button', :title => t('order.new_item'), :image => 'newitem.png', :image_alt => t('order.new_item'), :image_title => t('order.new_item')) %></div>
+</div>
+<div id="pagination" class="span-24">
+  <%= paginate(@orders) %>
+</div>

@@ -1,0 +1,16 @@
+<div id="nav" class="span-24 last">
+  <% menu_options = [
+        [t ('navigation.items.orders'), orders_path],
+        [t ('navigation.items.clients'), clients_path],
+        [t ('navigation.items.products'), products_path],
+        [t ('navigation.items.sales_managers'), sales_managers_path]
+        ] %>
+  <% unless menu_options.blank? %>
+  <% menu_options.each do |item| %>
+    <% str_class = item[1][1..100].starts_with?(params[:controller]) ? 'current' : nil %>
+    <li><%= link_to item[0], {:controller => item[1]}, :class => str_class %></li>
+    <% end %>
+    <% end %>
+  <ul>
+  </ul>
+</div>

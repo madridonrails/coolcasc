@@ -1,0 +1,12 @@
+es-ES:
+  client:
+    form:
+      legend:
+        client_information: Información del cliente
+        contact_person: Persona de contacto
+        buying_person: Responsable de compras
+        paying_person: Responsable de pagos
+    index:
+      summary: Listado de los clientes
+    new_item: Nuevo cliente
+    choose_sale_manager: Elija un representante

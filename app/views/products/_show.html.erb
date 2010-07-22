@@ -1,0 +1,19 @@
+<div id="elements-list" class="span-24">
+  <div id="product-information" class="span-24">
+    <fieldset>
+      <legend><%= t 'product.form.legend.product_information' %></legend>
+      <span><em><%= label_attribute :product, :code %>:</em><%= h @product.code %></span><br/>
+      <span><em><%= label_attribute :product, :name %>:</em><%= h @product.name %></span><br/>
+      <span><em><%= label_attribute :product, :description %>:</em><%= h @product.description %></span><br/>
+      <span><em><%= label_attribute :product, :cost_price %>:</em><%= h @product.cost_price %></span><br/>
+      <span><em><%= label_attribute :product, :retail_price %>:</em><%= h @product.retail_price %></span><br/>
+      <span><em><%= label_attribute :product, :wholesale_price %>:</em><%= h @product.wholesale_price %></span><br/>
+      <span><em><%= label_attribute :product, :weight %>:</em><%= h @product.weight %></span><br/>
+      <span><em><%= label_attribute :product, :cover_collection_id %>:</em><%= h @product.cover_collection.name %></span><br/>
+    </fieldset>
+  </div>
+  <div id="button-section" class="span-24">
+    <%= submit_button %>
+    <%= go_back_button products_path %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+INSTRUCTION FOR INSTALLING THE APPLICATION
+
+Requirements
+	- Ruby
+	- Rubygems
+	- Imagemagick
+
+-Copy config/database.example.yml to config/database.yml and edit this file in order to configure your database
+
+-Install gems dependencies via rake gems:install. These gems can be found at the file config/environment.rb
+
+-Since the application uses paperclip plugin, imagemagick must be installed on the server the app is running
+
+-Run rake db:migrate:reset WARNING!!! THIS WILL DELETE ALL YOUR DATA IF YOU HAVE A DATABASE WITH THE SAME NAME AS DESCRIBED IN config/database.yml
+
+-Copy config/initializers/local_config.rb.example to config/initializers/local_config.rb

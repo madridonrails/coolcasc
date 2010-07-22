@@ -1,0 +1,12 @@
+<%unless product.blank?%>
+  <% td_class = cycle('', ' class="impar"') %>
+  <tr>
+    <td<%= td_class %>><%= h product.code %> </td>
+    <td<%= td_class %>><%= h product.name %> </td>
+    <td<%= td_class %>>
+       <%= link_to image_tag('view.png', :alt => t('general.show'), :title => t('general.show' )), product_url(product) %>
+       <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit') ), edit_product_url(product) %>
+       <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), product_url(product), :method => 'delete', :confirm => t('general.are_you_sure') %>
+    </td>
+  </tr>
+<% end %>

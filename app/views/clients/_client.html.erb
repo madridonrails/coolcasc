@@ -1,0 +1,13 @@
+<%unless client.blank?%>
+  <% td_class = cycle('', ' class="impar"') %>
+  <tr>
+    <td<%= td_class %>><%= h client.code %> </td>
+    <td<%= td_class %>><%= h client.corporate_name %> </td>
+    <td<%= td_class %>><%= h client.cif %> </td>
+    <td<%= td_class %>>
+       <%= link_to image_tag('view.png', :alt => t('general.show'), :title => t('general.show' )), client_url(client) %>
+       <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit') ), edit_client_url(client) %>
+       <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), client_url(client), :method => 'delete', :confirm => t('general.are_you_sure') %>
+    </td>
+  </tr>
+<% end %>

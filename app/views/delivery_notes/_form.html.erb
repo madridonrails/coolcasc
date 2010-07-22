@@ -1,0 +1,21 @@
+  <div id="delivery_note-information" class="span-24">
+    <fieldset>
+      <legend><%= t('delivery_note.form.legend.delivery_note_information') %></legend>
+      <p>
+        <%= label_attribute :delivery_note, :code %>
+        <br/>
+        <%= text_field(:delivery_note, :code) %>
+      </p>
+      <p>
+        <%= label_attribute :delivery_note, :delivery_date %>
+        <br/>
+        <%= calendar_date_select(:delivery_note, :delivery_date) %>
+      </p>
+      <%= hidden_field(:delivery_note, :order_id) %>
+      <!--      <input type="hidden" value="<%= @order.id%>" name="delivery_note_order_id"/>-->
+    </fieldset>
+  </div>
+  <div class="span-24 button-section">
+    <%= blueprint_submit_button %>
+    <%= blueprint_go_back_button delivery_notes_path %>
+  </div>

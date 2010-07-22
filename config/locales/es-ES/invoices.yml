@@ -1,0 +1,9 @@
+es-ES:
+  invoice:
+    actions: Acciones sobre facturas
+    create:
+      success: La factura se ha generado correctamente
+    form:
+      legend:
+        invoice_information: Información de factura
+

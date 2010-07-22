@@ -1,0 +1,8 @@
+<div class="span-24 border">
+  <table>
+    <caption><%= t 'print.products' %></caption>
+    <%= render :partial => '/layouts/partials/print/order_lines_header' %>
+    <%= render :partial => 'order_lines/print/order_line', :collection => @order.order_lines, :as => :order_line %>
+  </table>
+</div>
+

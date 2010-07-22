@@ -1,0 +1,54 @@
+<div id="elements-list" class="span-24">
+  <div id="client-information" class="span-24">
+    <fieldset>
+      <legend><%= t 'client.form.legend.client_information' %></legend>
+      <span><em><%= label_attribute :client, :code %>:</em><%= h @client.code %></span><br/>
+      <span><em><%= label_attribute :client, :corporate_name %>:</em><%= h @client.corporate_name %></span><br/>
+      <span><em><%= label_attribute :client, :cif %>:</em><%= h @client.cif %></span><br/>
+      <span><em><%= label_attribute :client, :commercial_name %>:</em><%= h @client.commercial_name %></span><br/>
+      <span><em><%= label_attribute :client, :site %>:</em><%= h @client.site %></span><br/>
+      <span><em><%= label_attribute :client, :official_address %>:</em><%= h @client.official_address %></span><br/>
+      <span><em><%= label_attribute :client, :delivery_address %>:</em><%= h @client.delivery_address %></span><br/>
+      <span><em><%= label_attribute :client, :delivery_contact %>:</em><%= h @client.delivery_contact %></span><br/>
+      <span><em><%= label_attribute :client, :charge %>:</em><%= h @client.charge %></span><br/>
+      <span><em><%= label_attribute :client, :sales_manager_id %>:</em><%= h @client.sales_manager.name rescue '' %></span><br/>
+      <span><em><%= label_attribute :client, :notes %>:</em><%= h @client.notes %></span><br/>
+    </fieldset>
+  </div>
+  <div id="contact-person" class="span-24">
+    <fieldset>
+      <legend><%= t 'client.form.legend.contact_person' %></legend>
+      <span><em><%= label_attribute :client, :contact_person %>:</em><%= h @client.contact_person %></span><br/>
+      <span><em><%= label_attribute :client, :contact_phone %>:</em><%= h @client.contact_phone %></span><br/>
+      <span><em><%= label_attribute :client, :contact_mobile %>:</em><%= h @client.contact_mobile %></span><br/>
+      <span><em><%= label_attribute :client, :contact_fax %>:</em><%= h @client.contact_fax %></span><br/>
+      <span><em><%= label_attribute :client, :contact_mail %>:</em><%= h @client.contact_mail %></span><br/>
+    </fieldset>
+  </div>
+  <div id="buying-person" class="span-24">
+    <fieldset>
+      <legend><%= t 'client.form.legend.buying_person' %></legend>
+      <span><em><%= label_attribute :client, :buying_person %>:</em><%= h @client.buying_person %></span><br/>
+      <span><em><%= label_attribute :client, :buying_phone %>:</em><%= h @client.buying_phone %></span><br/>
+      <span><em><%= label_attribute :client, :buying_mobile %>:</em><%= h @client.buying_mobile %></span><br/>
+      <span><em><%= label_attribute :client, :buying_fax %>:</em><%= h @client.buying_fax %></span><br/>
+      <span><em><%= label_attribute :client, :buying_mail %>:</em><%= h @client.buying_mail %></span><br/>
+    </fieldset>
+  </div>
+  <div id="paying-person" class="span-24">
+    <fieldset>
+      <legend><%= t 'client.form.legend.paying_person' %></legend>
+      <span><em><%= label_attribute :client, :paying_person %>:</em><%= h @client.paying_person %></span><br/>
+      <span><em><%= label_attribute :client, :paying_phone %>:</em><%= h @client.paying_phone %></span><br/>
+      <span><em><%= label_attribute :client, :paying_mobile %>:</em><%= h @client.paying_mobile %></span><br/>
+      <span><em><%= label_attribute :client, :paying_fax %>:</em><%= h @client.paying_fax %></span><br/>
+      <span><em><%= label_attribute :client, :paying_mail %>:</em><%= h @client.paying_mail %></span><br/>
+      <span><em><%= label_attribute :client, :payment_id %>:</em><%= h @client.payment.name rescue '' %></span><br/>
+      <span><em><%= label_attribute :client, :payment_account %>:</em><%= h @client.payment_account %></span><br/>
+      <span><em><%= label_attribute :client, :payment_days %>:</em><%= h @client.payment_days %></span><br/>
+    </fieldset>
+  </div>
+  <div id="button-section" class="span-24">
+    <%= go_back_button clients_path %>
+  </div>
+</div>

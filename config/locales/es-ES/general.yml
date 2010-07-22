@@ -1,0 +1,21 @@
+es-ES:
+  general:
+    accept: Aceptar
+    actions: Acciones
+    are_you_sure: ¿Está seguro?
+    cancel: Cancelar
+    delete: Borrar
+    edit: Editar
+    go_back: Volver
+    "no": "No"
+    others: Otros
+    print: Imprimir
+    print_to_pdf: Imprimir a pdf
+    products: Productos
+    show: Ver
+    submit_form: Enviar
+    test: Prueba
+    thumbnail: Miniatura
+    total: Total
+    "yes": Sí
+    

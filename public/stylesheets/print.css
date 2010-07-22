@@ -1,0 +1,78 @@
+body{
+color:black;
+font-size:1em;
+}
+thead th {
+background-color:transparent;
+}
+th{
+color:black;
+font-size:1em;
+text-align:center;
+}
+td{
+color:black;
+font-size:1em;
+text-align:center;
+}
+.description{
+width:40%;
+}
+
+table img{
+width:25px;
+height:25px;
+margin-left:10px;
+}
+table a{
+text-decoration:none;
+color:#999;
+font-size:1.2em;
+}
+table a:hover{
+text-decoration:none;
+color:#fff;
+font-size:1.2em;
+}
+.header {
+background-image:url(../images/logopeke.jpg);
+background-repeat:no-repeat;
+background-position:center right;
+padding-top:15px;
+
+}
+
+caption{
+background-color:#cde8ef;
+}
+
+hr{
+margin-top:25px;
+margin-bottom:25px;
+background-color:#cde8ef;
+height:3px;
+}
+
+.footer p{
+font-size:0.9em;
+
+}
+
+p{
+padding:4px;
+text-align:justify;
+color:black;
+font-size:1.1em;
+
+}
+
+.border {
+border:solid 1px #999999;
+-moz-border-radius: 5px;
+padding:5px;
+margin-bottom:10px;
+}
+.total{
+font-weight:bold;
+}
+

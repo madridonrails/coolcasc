@@ -1,0 +1,84 @@
+  <div id="order-information" class="span-24">
+    <fieldset>
+      <legend><%= t('order.form.legend.order_information') %></legend>
+      <p>
+        <%= label_attribute :order, :code %> <%= t ('order.form.leave_code_blank_for_automatic') if @order.new_record? %>
+        <br/>
+        <%= text_field(:order, :code) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :order_date %>
+        <br/>
+        <%= calendar_date_select :order, :order_date %>
+      </p>
+      <p>
+        <%= label_attribute :order, :delivery_date %>
+        <br/>
+        <%= calendar_date_select :order, :delivery_date %>
+      </p>
+      <p>
+        <%= label_attribute :order, :client_id %>
+        <br/>
+        <%= select(:order, :client_id, list_from_record('Client', :header => t('order.choose_client'), :name => 'corporate_name')) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :deposit %>
+        <br/>
+        <%= check_box(:order, :deposit) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :freight_in_invoice %>
+        <br/>
+        <%= check_box(:order, :freight_in_invoice) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :is_paid %>
+        <br/>
+        <%= check_box(:order, :is_paid) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :amount_paid %>
+        <br/>
+        <%= text_field(:order, :amount_paid) %>
+      </p>
+      <p>
+        <%= label_attribute :order, :paid_date %>
+        <br/>
+        <%= calendar_date_select :order, :paid_date %>
+      </p>
+      <p> 
+        <%= label_attribute :order, :company_discount %>
+        <br/>
+        <%= text_field :order, :company_discount %>
+      </p>
+      <p>
+        <%= label_attribute :order, :sales_manager_discount %>
+        <br/>
+        <%= text_field :order, :sales_manager_discount %>
+      </p>
+      <p>
+        <%= label_attribute :order, :exhibitors %>
+        <br/>
+        <%= text_field :order, :exhibitors %>
+      </p>
+      <p>
+        <%= label_attribute :order, :catalogs %>
+        <br/>
+        <%= text_field :order, :catalogs %>
+      </p>
+      <p>
+        <%= label_attribute :order, :urgent %>
+        <br/>
+        <%= check_box :order, :urgent %>
+      </p>
+      <p>
+        <%= label_attribute :order, :notes %>
+        <br/>
+        <%= text_area :order, :notes, :class=>'textarea-big' %>
+      </p>
+    </fieldset>
+  </div>
+  <div class="span-24 button-section">
+    <%= blueprint_submit_button %>
+    <%= blueprint_go_back_button orders_path %>
+  </div>

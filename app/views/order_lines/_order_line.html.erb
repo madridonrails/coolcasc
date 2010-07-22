@@ -1,0 +1,13 @@
+<%unless order_line.blank?%>
+  <% td_class = cycle('', ' class="impar"') %>
+  <tr>
+    <td<%= td_class %>><%= h order_line.cover_pattern.pattern%> </td>
+    <td<%= td_class %>><%= h order_line.product.name %> </td>
+    <td<%= td_class %>><%= h order_line.count %> </td>
+    <td<%= td_class %>><%= h order_line.marked %> </td>
+    <td<%= td_class %>>
+      <%= link_to image_tag('edit.png', :alt => t('general.edit'), :title => t('general.edit') ), edit_order_order_line_path(order_line.order, order_line) %>
+      <%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), order_order_line_url(order_line.order, order_line), :method => 'delete', :confirm => t('general.are_you_sure') %>
+    </td>
+  </tr>
+<% end %>

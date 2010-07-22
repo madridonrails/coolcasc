@@ -1,0 +1,25 @@
+<% unless order.exhibitors.blank? %>
+  <tr>
+    <td><%= h order.exhibitors %></td>
+    <td><%= t 'activerecord.attributes.order.exhibitors' %></td>
+    <td><%= number_to_currency EXHIBITOR_PRICE %></td>
+    <td><%= number_to_currency EXHIBITOR_PRICE * order.exhibitors %></td>
+  </tr>
+<% end %>
+<% unless order.catalogs.blank? %>
+  <tr>
+    <td><%= h order.catalogs %></td>
+    <td><%= t 'activerecord.attributes.order.catalogs' %></td>
+    <td><%= number_to_currency CATALOG_PRICE %></td>
+    <td><%= number_to_currency CATALOG_PRICE * order.catalogs %></td>
+    <td>
+  </tr>
+<% end %>
+<% if order.freight_in_invoice? and order.invoice %>
+  <tr>
+    <td>&nbsp;</td>
+    <td><%= t 'activerecord.attributes.invoice.freight' %></td>
+    <td>&nbsp;</td>
+    <td><%= order.invoice.freight %>
+  </tr>
+<% end %>

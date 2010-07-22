@@ -1,0 +1,9 @@
+es-ES:
+  product:
+    choose_cover_collection: Elija una funda
+    form:
+      legend:
+        product_information: Información del producto
+    index:
+      summary: Listado de productos
+    new_item: Nuevo producto

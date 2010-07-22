@@ -1,0 +1,20 @@
+<div class="first span-3 miniform"><%= select :order_line, :cover_pattern_id, list_from_record('CoverPattern', :header => t('order_line.choose_cover_pattern'), :name => 'pattern') %></div>
+<div class="span-3 miniform"><%= select :order_line, :product_id, list_from_record('Product', :header => t('order_line.choose_product')) %></div>
+<div class="span-2 miniform"><%= text_field :order_line, :count, :class=>'span-2'%></div>
+<div class="span-2 miniform"><%= check_box :order_line, :marked, :class => 'bigcheck' %></div>
+<div class="span-3 miniform"><%= select :order_line, :mark_id, list_from_record('Mark', :header => t('order_line.choose_mark')) %></div>
+<div class="span-2 miniform"><%= text_field :order_line, :mark_price, :class => 'span-2' %></div>
+<div class="span-2 miniform"><%= @order_line.image_file_name.blank? ? '&nbsp;' : link_to(image_tag(@order_line.image.url(:thumb), :class => 'thumbnail'), url_for(@order_line.image.url(:original)))%></div>
+<div class="span-5 miniform"><%= file_field :order_line, :image, :size => 8 %></div>
+<div class="last span-2 miniform">
+  <%= submit_button_mini %>
+  <% unless @order_line.new_record? %>
+  <%= link_to blueprint_image_tag ('plugins/buttons/icons/cross.png', :title => t('general.delete'), :alt => t('general.delete')),
+    order_order_line_path(@order, @order_line),
+    :method => :delete,
+    :confirm => t('general.are_you_sure'),
+    :class => 'button negative small',
+    :multipart => true %>
+  <% end %>
+
+</div>

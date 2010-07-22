@@ -1,0 +1,5 @@
+<%= object_messages(@delivery_note) %>
+<%= render :partial => 'orders/show' %>
+<%= form_tag delivery_note_path(@delivery_note), :method => :put %>
+  <%= render :partial => 'form'%>
+</form>

@@ -1,0 +1,332 @@
+body{
+background-image: url(../images/wallpaper.jpg);
+}
+th{
+background-image:url(../images/pix.png);
+color:#fff;
+font-size:1.2em;
+text-align:center;
+}
+td{
+color:#999;
+font-size:1.3em;
+text-align:center;
+}
+table img{
+width:25px;
+height:25px;
+margin-left:10px;
+}
+table a{
+text-decoration:none;
+color:#999;
+font-size:1.2em;
+}
+table a:hover{
+text-decoration:none;
+color:#fff;
+font-size:1.2em;
+}
+#header {
+background-color:#1a62b4;
+height:170px;
+background-image: url(../images/topVentana.jpg);
+background-repeat:no-repeat;
+background-position:center;
+border: 1px solid #ccc;
+}
+
+#nav{
+background-image: url(../images/fondo.png);
+border: 1px solid #ccc;
+height:30px;
+}
+
+#nav ul {
+list-style-type:none;
+}
+#nav li {
+display:inline;
+margin-right:1em;
+margin-left:1em;
+margin-top:1em;
+}
+#nav a{
+color:#ffffff;
+text-decoration:none;
+font-size:1.5em;
+}
+
+#nav a:hover{
+color:#999999;
+text-decoration:none;
+}
+
+p{
+padding:4px;
+text-align:justify;
+color:#ffffff;
+font-size:1.2em;
+margin:0px;
+}
+
+#footer {
+background-image: url(../images/layout_bottom.png);
+text-align:right;
+padding-top:3px;
+height:20px;
+margin-top:10px;
+}
+
+#footer em{
+padding-right:5px;
+}
+#footer a{
+color:#ffffff;
+text-decoration:none;
+}
+#footer a:hover{
+color:#999999;
+text-decoration:none;
+}
+#button-section{
+background-image: url(../images/pix.png);
+text-align:left;
+padding-bottom:25px;
+padding-top:25px;
+
+}
+
+.rowpar{
+background-image:url(../images/fondo.png);
+}
+.page-navigation a{
+color:#999;
+text-decoration:none;
+}
+
+.logo{
+padding-top:141px;
+}
+.logo2{
+padding-top:23px;
+}
+.message{padding:0px; background-color:#44b6fd;background-image:url(../images/pix.png);border:1px solid #fff;}
+.failure  {border-color: #fff;background:#68020e;}
+.failure p {color: #fff;background-image:url(../images/pix.png);}
+
+.success  {border-color: #fff;background-color:#62e862;}
+.success p {color:#fff;}
+#nav .current {
+font-size:1.5em;
+color:#666666;
+font-weight:bold;
+}
+.new-item-button {
+text-align:center; 
+padding-right:20px;
+padding-bottom:10px;
+background-image:url(../images/fondobotonfocus.png);
+background-repeat:no-repeat;
+width:155px;
+height:30px;
+color:#ffffff;
+
+}
+button.positive {
+background-color:transparent;
+border:none;
+color:white;
+padding:10px 15px 7px 9px;
+margin:0.7em 0.5em 0.7em 0;
+background-image:url(../images/fondoboton.png);
+background-repeat:no-repeat;
+width:160px;
+text-align:center;
+}
+
+button.positive:hover {
+background-color:transparent;
+border:none;
+color:white;
+padding:10px 15px 7px 9px;
+margin:0.7em 0.5em 0.7em 0;
+background-color:transparent;
+background-image:url(../images/fondobotonfocus.png);
+background-repeat:no-repeat;
+width:160px;
+color:#336699;
+text-align:center;
+}
+
+a.button {
+background-color:transparent;
+border-color:transparent;
+color:white;
+padding:15px 90px 10px 20px;
+margin:0.7em 0.5em 0.7em 0;	
+background-image:url(../images/fondoboton.png);
+background-repeat:no-repeat;
+width:160px;
+text-align:center;
+text-decoration:none;
+}
+
+a.button:hover{
+background-color:transparent;
+border-color:transparent;
+padding:15px 90px 10px 20px;
+margin:0.7em 0.5em 0.7em 0;
+background-color:transparent;
+background-image:url(../images/fondobotonfocus.png);
+background-repeat:no-repeat;
+text-decoration:none;
+}
+
+button.positive.small {
+width:30px;
+/*background-image:url(../images/fondobotonsmall.png);*/
+background-image:none;
+cursor:pointer;
+padding:0px;
+margin-top:15px;
+margin-left:10px;
+margin-right:10px;
+
+}
+.tick{
+width:14px;
+height:15px;
+}
+
+span {
+color:#fff;
+font-size:1.3em;
+padding-top:5px;
+}
+
+
+span em {
+background-image:url(../images/fondo.png);
+font-size:1.4em;
+margin-right:10px;
+}
+#back {
+background-color:transparent;background-image:url(../images/pix.png);
+}
+
+#pagination{
+background-color:transparent;background-image:url(../images/pix.png);
+}
+
+/* ESTILOS PARA EL PREVIEW */
+.preview{
+color:black;
+font-size:1em;
+padding-top:15px;
+}
+
+.preview thead th {
+background-color:transparent;
+}
+preview th{
+color:black;
+font-size:1em;
+text-align:center;
+}
+.preview td{
+color:black;
+font-size:1em;
+text-align:center;
+}
+.preview .description{
+width:40%;
+}
+
+.preview table img{
+width:25px;
+height:25px;
+margin-left:10px;
+}
+.preview table a{
+text-decoration:none;
+color:#999;
+font-size:1.2em;
+}
+.preview table a:hover{
+text-decoration:none;
+color:#fff;
+font-size:1.2em;
+}
+.preview .header {
+background-image:url(../images/logopeke.jpg);
+background-repeat:no-repeat;
+background-position:center right;
+padding-top:15px;
+
+}
+.preview .noheader{
+padding-top:15px;
+
+}
+
+.preview caption{
+background-color:#cde8ef;
+}
+
+.preview hr{
+margin-top:25px;
+margin-bottom:25px;
+background-color:#cde8ef;
+height:3px;
+}
+
+.preview .footer p{
+font-size:0.9em;
+
+}
+
+.preview p{
+padding:4px;
+text-align:justify;
+color:black;
+font-size:1.1em;
+
+}
+
+.preview .border {
+border:solid 1px #999999;
+-moz-border-radius: 5px;
+padding:0px;
+margin-bottom:0px;
+}
+.preview .total{
+font-weight:bold;
+}
+.preview div{
+background-color:white;
+}
+.preview thead tr th{
+color:black;
+}
+
+.printing{
+width:40px;margin-right:10px;
+}
+
+.button.negative.small{
+background-image:none;
+padding: 0;
+text-align:center;
+width:0px;
+}
+a.negative{
+text-align:center;
+}
+.miniform .thumbnail{
+margin-top:5px;
+}
+
+.button_icon{
+margin-right:10px;
+}

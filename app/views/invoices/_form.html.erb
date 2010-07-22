@@ -1,0 +1,35 @@
+  <div id="invoice-information" class="span-24">
+    <fieldset>
+      <legend><%= t('invoice.form.legend.invoice_information') %></legend>
+      <p>
+        <%= label_attribute :invoice, :code %>
+        <br/>
+        <%= text_field(:invoice, :code) %>
+      </p>
+      <p>
+        <%= label_attribute :invoice, :delivery_date %>
+        <br/>
+        <%= calendar_date_select(:invoice, :delivery_date) %>
+      </p>
+      <p>
+        <%= label_attribute :invoice, :charge_date %>
+        <br/>
+        <%= calendar_date_select(:invoice, :charge_date) %>
+      </p>
+      <p>
+        <%= label_attribute :invoice, :amount_charged %>
+        <br/>
+        <%= text_field(:invoice, :amount_charged) %>
+      </p>
+      <p>
+        <%= label_attribute :invoice, :freight %>
+        <br/>
+        <%= text_field(:invoice, :freight) %>
+      </p>
+      <%= hidden_field(:invoice, :order_id) %>
+    </fieldset>
+  </div>
+  <div class="span-24 button-section">
+    <%= blueprint_submit_button %>
+    <%= blueprint_go_back_button invoices_path %>
+  </div>

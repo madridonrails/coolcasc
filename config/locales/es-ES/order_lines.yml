@@ -1,0 +1,13 @@
+es-ES:
+  order_line:
+    choose_cover_pattern: Elija patrón de funda
+    choose_mark: Elija tipo de marcado
+    choose_product: Elija producto
+    form:
+      legend:
+        order_line_information: Información de línea de pedido
+    index:
+      summary: Listado de líneas de pedido      
+    new_item: Nueva línea de pedido
+    no_order_lines: No hay líneas de pedido
+    successfully_created: 'La línea de pedido se ha creado correctamente'

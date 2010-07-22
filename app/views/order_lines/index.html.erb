@@ -1,0 +1,11 @@
+<%= object_messages%>
+<div id="order-information" class="span-24 preview">
+  <%= render :partial => 'orders/show', :object => @order %>
+</div>
+<div id="elements-list" class="span-24 miniform">
+    <%= render :partial => 'order_lines' %>
+</div>
+<div id="button-section" class="span-24">
+  <!--%= blueprint_button new_order_order_line_path(@order), :title => t('order_line.new_item') %-->
+  <%= blueprint_go_back_button orders_path %>
+</div>

@@ -1,0 +1,35 @@
+<% taxes = (order.amount_after_discounts * TAXES_RATE) %>
+<tr>
+  <td><%= t 'print.amount_before_taxes_and_discounts' %>:</td>
+  <td><%= number_to_currency order.amount_before_taxes_and_discounts %></td>
+</tr>
+<tr>
+  <td><%= t 'activerecord.attributes.order.sales_manager_discount'%></td>
+  <td><%= number_to_percentage order.sales_manager_discount %></td>
+</tr>
+<tr>
+  <td><%= t 'activerecord.attributes.order.company_discount' %></td>
+  <td><%= number_to_percentage order.company_discount %></td>
+</tr>
+<tr>
+  <td><%= t 'print.amount_before_taxes' %></td>
+  <td><%= number_to_currency order.amount_after_discounts %></td>
+</tr>
+<tr>
+  <td><%= t 'print.taxes' %>:</td>
+  <td><%= number_to_currency taxes %></td>
+</tr>
+<tr>
+  <td>-</td>
+  <td>&nbsp;</td>
+</tr>
+<% if order.freight_in_invoice? and order.invoice %>
+  <td><%= t 'print.freight' %></td>
+  <td><%= order.invoice.freight %></td>
+<% end %>
+<tr>
+<tr>
+  <td><%= t 'print.total_amount' %></td>
+  <td class="total"><%= number_to_currency order.total_amount(taxes) %></td>
+</tr>
+

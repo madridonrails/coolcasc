@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'print,screen' %>
+  	<%= stylesheet_link_tag 'print', :media => 'print,screen' %>
+  </head>
+  <body>
+    <div class="container">
+      <% if @with_header %>
+        <%= render :partial => '/layouts/partials/print/header' %>
+      <% else %>
+        <div  class="span-24 noheader" style="margin-top:<%=MARGIN_PRINT%>mm"/>
+          <!--%= image_tag 'blanco.jpg', :style => "margin-top: 100mm"%-->
+      <% end %>
+        <hr/>
+          <div  class="span-24 border">
+            <div  class="span-10 first">
+              <div class="span-5 first"><%= t 'print.order_code' %>:</div>
+              <div class="span-5 last"><%= @order.code %></div>
+              <%= @content_for_layout %>
+            </div>
+            <div class="span-14 last">
+              <%= render :partial => 'clients/print/financial_data', :locals => {:client => @order.client} %>
+            </div>
+          </div>
+        <div class="span-24 border">
+          <div class="span-7 first"><%= t 'activerecord.attributes.client.delivery_address' %>:</div>
+          <div class="span-17 last"><%= h @order.client.delivery_address %></div>
+        </div>
+        <div class="span-24 border">
+          <table>
+            <caption><%= t 'print.products' %></caption>
+            <%= render :partial => '/layouts/partials/print/order_lines_header' %>
+            <%= render :partial => 'order_lines/print/order_line', :collection => @order.order_lines, :as => :order_line %>
+          </table>
+        </div>
+        <% unless @order.exhibitors.blank? and @order.catalogs.blank? %>
+          <div class="span-24 border ">
+            <table>
+              <caption><%= t 'print.others'%></caption>
+              <thead>
+                <tr>
+                  <th><%= t 'print.count' %></th>
+                  <th><%= t 'print.concept' %></th>
+                  <th><%= t 'print.unit_price' %></th>
+                  <th><%= t 'print.total' %></th>
+                </tr>
+              </thead>
+              <%= render :partial => 'orders/print/others', :locals => {:order => @order} %>
+            </table>
+          </div>
+        <% end %>
+        <div class="span-24  border">
+          <div class="span-10  first">	
+            <table>
+              <caption><%= t 'print.payment' %></caption>
+              <%= render :partial => 'clients/print/payment', :locals => {:client => @order.client} %>
+            </table>                         
+          </div>
+          <div class="span-14 last">
+            <table>
+              <%= render :partial => 'orders/print/total', :locals => {:order => @order} %>
+            </table>
+          </div>
+        </div>
+      <script>
+        window.print();
+      </script>
+    </div>
+  <body>
+</html>
+

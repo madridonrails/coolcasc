@@ -1,0 +1,13 @@
+<%= object_messages %>
+<div id="elements-list" class="span-24 last">
+  <% unless @sales_managers.empty? %>
+    <table id="table-element-list" summary="<%= t ('sales_manager.index.summary') %>">
+      <%= render :partial => 'header' %>
+      <%= render :partial => 'sales_manager', :collection => @sales_managers %>
+    </table>
+  <% end %>
+</div>
+<%= new_item_button new_sales_manager_path, :title => t('sales_manager.new_item'), :image_alt => t('sales_manager.new_item'), :image_title => t('sales_manager.new_item') %>
+<div id="pagination" class="span-24">
+  <%= paginate(@sales_managers) %>
+</div>

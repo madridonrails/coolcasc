@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <%= render :partial => '/layouts/partials/head' %>
+  <%= calendar_date_select_includes %>
+  <body>
+    <div class="container">
+      <%= render :partial => '/layouts/partials/header' %>
+      <%= render :partial => '/layouts/partials/nav' %>
+      <%= @content_for_layout %>
+      <%= render :partial => '/layouts/partials/footer' %>
+    </div>
+  <body>
+</html>

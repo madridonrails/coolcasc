@@ -1,0 +1,7 @@
+<%= object_messages(@delivery_note) %>
+<div class="span-24 preview">
+  <%= render :partial => 'orders/show' %>
+</div>
+<%= form_tag delivery_notes_path %>
+  <%= render :partial => 'form'%>
+</form>

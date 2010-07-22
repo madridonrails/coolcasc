@@ -1,0 +1,15 @@
+<% form_for @order_line,
+  :url => {:action => :update},
+  :method => :put,
+  :html => {
+            :multipart => true,
+            :target => 'upload_frame'
+  } do |f| %> 
+
+    <%= render :partial => 'remote_form', :locals => {:order_line => f} %>
+  <!--%= link_to image_tag('delete.png', :alt => t('general.delete'), :title => t('general.delete') ), order_order_line_url(@order_line), :method => 'delete', :confirm => t('general.are_you_sure') %-->
+
+  <input type="hidden" name="order_id" value="<%= @order_line.order_id %>"/>
+  <input type="hidden" name="order_line_id" value="<%= @order_line.id %>"/>
+<% end %>
+

@@ -1,0 +1,2 @@
+DEFAULT_LANGUAGE = 'es-ES'
+MOR_URL = 'http://www.madridonrails.com'

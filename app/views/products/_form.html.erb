@@ -1,0 +1,49 @@
+  <div id="product-information" class="span-24">
+    <fieldset>
+      <legend><%= t 'product.form.legend.product_information' %></legend>
+      <p>
+        <%= label_attribute :product, :code %>
+        <br/>
+        <%= text_field :product, :code %>
+      </p>
+      <p>
+        <%= label_attribute :product, :name %>
+        <br/>
+        <%= text_field :product, :name %>
+      </p>
+      <p>
+        <%= label_attribute :product, :description %>
+        <br/>
+        <%= text_area :product, :description, :class => 'textarea-small' %>
+      </p>
+      <p>
+        <%= label_attribute :product, :cost_price %>
+        <br/>
+        <%= text_field :product, :cost_price %>
+      </p>
+      <p>
+        <%= label_attribute :product, :retail_price %>
+        <br/>
+        <%= text_field :product, :retail_price %>
+      </p>
+      <p>
+        <%= label_attribute :product, :wholesale_price %>
+        <br/>
+        <%= text_field :product, :wholesale_price %>
+      </p>
+      <p>
+        <%= label_attribute :product, :weight %>
+        <br/>
+        <%= text_field :product, :weight %>
+      </p>
+      <p>
+        <%= label_attribute :product, :cover_collection_id %>
+        <br/>
+        <%= select(:product, :cover_collection_id, list_from_record('CoverCollection', :header => t('product.choose_cover_collection'))) %>
+      </p>
+    </fieldset>
+  </div>
+  <div id="button-section" class="column span-24 last">
+    <%= submit_button %>
+    <%= go_back_button products_path %>
+  </div>

@@ -1,0 +1,12 @@
+  <head>
+    <title><%= t("title.#{params[:controller]}.#{params[:action]}", :default => t ('title.default'))  %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <%= stylesheet_link_tag 'blueprint/forms', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen, projection' %>
+    <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+    <%= stylesheet_link_tag 'type', :media=>'screen' %>
+    <%= stylesheet_link_tag 'structure', :media => 'screen' %>
+    <%= stylesheet_link_tag 'forms', :media => 'screen' %>
+
+    <%= javascript_include_tag :defaults %>
+  </head>

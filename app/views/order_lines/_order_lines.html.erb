@@ -1,0 +1,8 @@
+<%= render :partial => 'header' %>
+<div id="create_order_line">
+  <%= render :partial => 'new_order_line', :object => @order_line %>
+</div>
+<div id="edit_order_lines">
+  <%= render :partial => 'edit_order_line', :collection => @order.order_lines, :as => :order_line %>
+</div>
+

@@ -1,0 +1,6 @@
+<%= render :partial => 'delivery_notes/print/print' %>
+<div class="span-5 first"><%= t 'print.invoice_code' %>:</div>
+<div class="span-5 last"><%= @order.invoice.code %></div>
+<div class="span-5 first"><%= t 'print.delivery_date' %>:</div>
+<div class="span-5 last"><%= @order.invoice.delivery_date %></div>
+

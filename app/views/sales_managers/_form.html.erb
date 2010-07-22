@@ -1,0 +1,66 @@
+<%= form_tag sales_managers_url %>
+  <div id="sales_manager-information" class="span-24">
+    <fieldset>
+      <legend><%= t 'sales_manager.form.legend.sales_manager_information' %></legend>
+      <p>
+        <%= label_attribute :sales_manager, :name %>
+        <br/>
+        <%= text_field :sales_manager, :name %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :address %>
+        <br/>
+        <%= text_field :sales_manager, :address %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :phone %>
+        <br/>
+        <%= text_field :sales_manager, :phone %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :mobile %>
+        <br/>
+        <%= text_field :sales_manager, :mobile %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :email %>
+        <br/>
+        <%= text_field :sales_manager, :email %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :market %>
+        <br/>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :fax %>
+        <br/>
+        <%= text_field :sales_manager, :fax %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :charge %>
+        <br/>
+        <%= text_field :sales_manager, :charge %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :cif %>
+        <br/>
+        <%= text_field :sales_manager, :cif %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :corporate_name %>
+        <br/>
+        <%= text_field :sales_manager, :corporate_name %>
+      </p>
+      <p>
+        <%= label_attribute :sales_manager, :official_address %>
+        <br/>
+        <%= text_field :sales_manager, :official_address %>
+      </p>
+    </fieldset>
+  </div>
+  <div id="button-section" class="span-24">
+    <%= submit_button %>
+    <%= go_back_button sales_managers_url %>
+  </div>
+</form>
+</ol>

@@ -1,0 +1,20 @@
+es-ES:
+  print:
+    amount_before_taxes: Importe (sin IVA)
+    amount_before_taxes_and_discounts: Importe antes de descuentos
+    client_code: Código de cliente
+    concept: Concepto
+    count: Cantidad
+    delivery_date: Fecha de entrega
+    delivery_note_code: Código de albarán
+    invoice_code: Código de factura
+    order_code: Código de pedido
+    others: Otros
+    payment: Forma de pago
+    print: Imprimir
+    print_to_pdf: Imprimir a PDF
+    products: Productos
+    taxes: IVA 16%
+    total: Total
+    total_amount: Total
+    unit_price: Precio unitario
